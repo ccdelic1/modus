@@ -1,0 +1,19 @@
+{
+  "type": "modus:configurable_ore",
+  "ore": "emerald",
+  "biomes": [
+    "minecraft:meadow",
+    "minecraft:frozen_peaks",
+    "minecraft:jagged_peaks",
+    "minecraft:stony_peaks",
+    "minecraft:snowy_slopes",
+    "minecraft:cherry_grove",
+    "minecraft:grove",
+    "minecraft:windswept_hills",
+    "minecraft:windswept_forest",
+    "minecraft:windswept_gravelly_hills"
+  ],
+  "remove": ["minecraft:ore_emerald"],
+  "add": ["modus:ore_emerald"],
+  "step": "underground_ores"
+}

@@ -1,8 +1,0 @@
-{
-  "type": "modus:configurable_ore",
-  "ore": "ancient_debris",
-  "biomes": "#minecraft:is_nether",
-  "remove": ["minecraft:ore_ancient_debris_large", "minecraft:ore_debris_small"],
-  "add": ["modus:ore_ancient_debris"],
-  "step": "underground_ores"
-}

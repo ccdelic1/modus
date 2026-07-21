@@ -1,0 +1,10 @@
+{
+  "feature": "modus:ore_nether_gold",
+  "placement": [
+    { "type": "modus:configurable_rarity_filter", "ore": "nether_gold" },
+    { "type": "modus:configurable_count", "ore": "nether_gold" },
+    { "type": "minecraft:in_square" },
+    { "type": "modus:configurable_height_range", "ore": "nether_gold" },
+    { "type": "minecraft:biome" }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "feature": "modus:ore_diamond",
+  "placement": [
+    { "type": "modus:configurable_rarity_filter", "ore": "diamond" },
+    { "type": "modus:configurable_count", "ore": "diamond" },
+    { "type": "minecraft:in_square" },
+    { "type": "modus:configurable_height_range", "ore": "diamond" },
+    { "type": "minecraft:biome" }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "type": "modus:configurable_ore",
+  "ore": "diamond",
+  "biomes": "#minecraft:is_overworld",
+  "remove": ["minecraft:ore_diamond", "minecraft:ore_diamond_buried", "minecraft:ore_diamond_large", "minecraft:ore_diamond_medium"],
+  "add": ["modus:ore_diamond"],
+  "step": "underground_ores"
+}

@@ -1,8 +1,0 @@
-{
-  "type": "modus:configurable_ore",
-  "ore": "nether_gold",
-  "biomes": "#minecraft:is_nether",
-  "remove": ["minecraft:ore_gold_deltas", "minecraft:ore_gold_nether"],
-  "add": ["modus:ore_nether_gold"],
-  "step": "underground_ores"
-}

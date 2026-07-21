@@ -1,8 +1,0 @@
-{
-  "type": "modus:configurable_ore",
-  "ore": "gold",
-  "biomes": "#minecraft:is_overworld",
-  "remove": ["minecraft:ore_gold", "minecraft:ore_gold_lower", "minecraft:ore_gold_extra"],
-  "add": ["modus:ore_gold"],
-  "step": "underground_ores"
-}

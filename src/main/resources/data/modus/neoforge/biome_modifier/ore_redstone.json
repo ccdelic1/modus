@@ -1,0 +1,8 @@
+{
+  "type": "modus:configurable_ore",
+  "ore": "redstone",
+  "biomes": "#minecraft:is_overworld",
+  "remove": ["minecraft:ore_redstone", "minecraft:ore_redstone_lower"],
+  "add": ["modus:ore_redstone"],
+  "step": "underground_ores"
+}

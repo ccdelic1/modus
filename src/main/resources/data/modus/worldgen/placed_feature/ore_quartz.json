@@ -1,0 +1,10 @@
+{
+  "feature": "modus:ore_quartz",
+  "placement": [
+    { "type": "modus:configurable_rarity_filter", "ore": "quartz" },
+    { "type": "modus:configurable_count", "ore": "quartz" },
+    { "type": "minecraft:in_square" },
+    { "type": "modus:configurable_height_range", "ore": "quartz" },
+    { "type": "minecraft:biome" }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "type": "modus:configurable_ore",
+  "ore": "copper",
+  "biomes": "#minecraft:is_overworld",
+  "remove": ["minecraft:ore_copper", "minecraft:ore_copper_large"],
+  "add": ["modus:ore_copper"],
+  "step": "underground_ores"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "modus:configurable_ore",
+  "ore": "quartz",
+  "biomes": "#minecraft:is_nether",
+  "remove": ["minecraft:ore_quartz_deltas", "minecraft:ore_quartz_nether"],
+  "add": ["modus:ore_quartz"],
+  "step": "underground_ores"
+}

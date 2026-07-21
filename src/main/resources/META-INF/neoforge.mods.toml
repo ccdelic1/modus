@@ -1,0 +1,84 @@
+modLoader="javafml" #mandatory
+
+loaderVersion="${loader_version_range}" #mandatory
+
+license="${mod_license}"
+
+[[mods]] #mandatory
+
+modId="${mod_id}" #mandatory
+
+version="${mod_version}" #mandatory
+
+displayName="${mod_name}" #mandatory
+
+authors="${mod_authors}"
+
+logoFile="icon.png"
+
+description='''
+Modus makes the world generation of every vanilla ore, the spawn caps of every vanilla mob
+category, and the player XP gain rate fully configurable. Every feature is opt-in: with a
+fresh install and no config changes, Modus changes nothing about how the game plays.
+
+For each vanilla ore (coal, iron, copper, gold, nether gold, redstone, diamond, lapis,
+emerald, nether quartz and ancient debris) the mod exposes, in its own file under
+config/Modus/oreOptions/:
+  - whether Modus's configurable generation replaces vanilla's for that ore (off by default -
+    vanilla generation is what runs until this is turned on)
+  - the minimum and maximum (both inclusive) size of a single vein
+  - how many veins are attempted per chunk
+  - a rarity chance (1 in N) applied on top of the vein attempts
+  - the minimum and maximum Y level the ore can generate at
+
+Every installed mod's ores are auto-discovered and get their own file under
+config/Modus/oreOptions/modded/<Mod Name>/. Since Modus doesn't own how a mod generates its
+ore, these are controlled by MULTIPLYING what the mod already does rather than replacing it,
+which works for essentially any ore mod:
+  - enable/disable the ore entirely (enabled by default)
+  - a frequency multiplier - more or fewer veins (1.0 = unchanged)
+  - a size multiplier - bigger or smaller veins (1.0 = unchanged; ores using vanilla's own
+    ore feature only)
+
+config/Modus/mobOptions/mobs.toml exposes the per-chunk spawn cap for every mob category
+(monsters, creatures, ambient mobs, axolotls, water creatures, etc), behind a master switch
+that's off by default.
+
+config/Modus/XP/xp.toml exposes a global experience gain multiplier (0.1x - 10x, vanilla
+is 1.0x) applied to every source of XP - mining, mob kills, smelting, fishing, breeding
+and more - behind a master switch that's off by default.
+
+config/Modus/structureOptions/ exposes a rarity multiplier (0.1x - 10x, vanilla is 1.0x,
+the default) and an enable/disable switch (enabled by default) for every structure - vanilla
+ones under vanilla/, every installed mod's own structures auto-discovered under
+modded/<Mod Name>/.
+
+config/Modus/structureOptions/blacklist.toml exposes a global block replacement list applied
+to every structure as it generates - e.g. replacing every bookshelf with an oak log,
+everywhere, in every structure - behind a master switch that's off by default, with an
+empty list either way until entries are added.
+
+Most values are read live from config, so editing the config and reloading the world (or
+restarting the server) immediately takes effect without needing a new datapack or a restart
+of the game itself. The one exception is each ore's on/off switch: since turning it on means
+swapping out vanilla's own ore generation for Modus's (not just changing numbers within an
+already-active feature), that swap happens through the same biome modifier system datapacks
+use, which only re-resolves when a world is (re)loaded - not instantly, and not via /reload.
+'''
+
+[[mixins]]
+config="modus.mixins.json"
+
+[[dependencies.${mod_id}]] #optional
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"

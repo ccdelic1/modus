@@ -1,0 +1,10 @@
+{
+  "feature": "modus:ore_coal",
+  "placement": [
+    { "type": "modus:configurable_rarity_filter", "ore": "coal" },
+    { "type": "modus:configurable_count", "ore": "coal" },
+    { "type": "minecraft:in_square" },
+    { "type": "modus:configurable_height_range", "ore": "coal" },
+    { "type": "minecraft:biome" }
+  ]
+}

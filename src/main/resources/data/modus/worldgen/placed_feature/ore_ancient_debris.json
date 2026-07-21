@@ -1,0 +1,10 @@
+{
+  "feature": "modus:ore_ancient_debris",
+  "placement": [
+    { "type": "modus:configurable_rarity_filter", "ore": "ancient_debris" },
+    { "type": "modus:configurable_count", "ore": "ancient_debris" },
+    { "type": "minecraft:in_square" },
+    { "type": "modus:configurable_height_range", "ore": "ancient_debris" },
+    { "type": "minecraft:biome" }
+  ]
+}

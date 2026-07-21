@@ -1,0 +1,10 @@
+{
+  "feature": "modus:ore_iron",
+  "placement": [
+    { "type": "modus:configurable_rarity_filter", "ore": "iron" },
+    { "type": "modus:configurable_count", "ore": "iron" },
+    { "type": "minecraft:in_square" },
+    { "type": "modus:configurable_height_range", "ore": "iron" },
+    { "type": "minecraft:biome" }
+  ]
+}

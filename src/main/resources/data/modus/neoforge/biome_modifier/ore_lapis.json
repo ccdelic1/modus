@@ -1,0 +1,8 @@
+{
+  "type": "modus:configurable_ore",
+  "ore": "lapis",
+  "biomes": "#minecraft:is_overworld",
+  "remove": ["minecraft:ore_lapis", "minecraft:ore_lapis_buried"],
+  "add": ["modus:ore_lapis"],
+  "step": "underground_ores"
+}

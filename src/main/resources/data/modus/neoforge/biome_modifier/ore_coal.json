@@ -1,0 +1,8 @@
+{
+  "type": "modus:configurable_ore",
+  "ore": "coal",
+  "biomes": "#minecraft:is_overworld",
+  "remove": ["minecraft:ore_coal_upper", "minecraft:ore_coal_lower"],
+  "add": ["modus:ore_coal"],
+  "step": "underground_ores"
+}
